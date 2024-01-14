@@ -1,6 +1,5 @@
 import logo from "../assets/Link → image.png";
 import mobileLogo from "../assets/logo.png";
-
 import Headroom from "react-headroom";
 import { useState, useEffect } from "react";
 

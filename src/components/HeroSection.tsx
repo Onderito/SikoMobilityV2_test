@@ -9,11 +9,14 @@ const HeroSection = () => {
         Découvrez notre gamme de services pour toutes les{" "}
         <span className="text-blue-500 dark:text-white">mobilités</span>
       </h2>
-      <div className="lg:flex gap-5 mt-4 font-Montserrat">
+      <div className="lg:flex gap-5 mt-4 font-Montserrat ">
         {heroSections.map((hero, index) => (
-          <div key={index} className="mt-4 relative lg:max-w-lg md:max-w-2xl">
+          <div
+            key={index}
+            className="mt-4 relative lg:max-w-lg md:max-w-2xl transition duration-300 ease-in transform hover:scale-105"
+          >
             <img
-              className="rounded-lg  h-full"
+              className="rounded-lg  h-full "
               src={hero.image}
               alt="photo d'une personne sur une moto"
             />
