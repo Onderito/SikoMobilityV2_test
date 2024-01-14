@@ -4,7 +4,11 @@ import blob from "../assets/Ellipse 1.png";
 const HeroSection = () => {
   return (
     <div className="flex flex-col justify-center items-center p-6 lg:mt-4">
-      <img className=" absolute lg:top-0 lg:left-0" src={blob} alt="blob" />
+      <img
+        className="lg:absolute lg:top-0 lg:left-0 lg:block hidden"
+        src={blob}
+        alt="blob"
+      />
       <h2 className="font-extrabold font-Montserrat max-w-4xl text-2xl md:text-4xl lg:text-5xl md:text-center text-[#313131] dark:text-white">
         Découvrez notre gamme de services pour toutes les{" "}
         <span className="text-blue-500 dark:text-white">mobilités</span>
