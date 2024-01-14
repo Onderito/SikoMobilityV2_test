@@ -14,7 +14,7 @@ const App: React.FC = () => {
   };
   return (
     <div className={`${lightMode ? "" : "dark"}`}>
-      <div className="bg-[#F0F2F5] dark:bg-[#1f2937]">
+      <div className="bg-[#f0f2f5c1] dark:bg-[#1f2937]">
         <NavBar lightMode={lightMode} onChangeTheme={handleChangeTheme} />
         <HeroSection />
         <ClientFeedbackForm />
