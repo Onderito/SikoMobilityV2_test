@@ -10,7 +10,7 @@ type NavBarProps = {
 };
 
 const NavBar: React.FC<NavBarProps> = ({
-  lightMode,
+  lightMode = false,
   onChangeTheme,
 }: NavBarProps) => {
   const [isMobile, setIsMobile] = useState(false);
@@ -88,7 +88,7 @@ const NavBar: React.FC<NavBarProps> = ({
   return (
     <Headroom>
       <header className="dark:bg-[#111827] bg-[#FFFFFF] font-Montserrat flex w-full z-50 justify-between items-center lg:justify-around p-4 border-b-2 dark:border-[#4B5563]">
-        <img className="" src={logo} alt="logo de l'entreprise" />
+        <img className="w-56" src={logo} alt="logo de l'entreprise" />
         {/* Desktop navigation */}
         <nav className="hidden md:flex items-center gap-10">
           <a

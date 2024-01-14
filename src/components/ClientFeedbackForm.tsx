@@ -33,11 +33,11 @@ const ClientFeedbackForm = () => {
 
   return (
     <div className="font-Montserrat">
-      <h3 className="max-w-3xl mx-auto text-2xl md:text-4xl lg:text-5xl p-5 font-semibold text-[#313131] dark:text-white">
+      <h2 className="max-w-3xl mx-auto text-2xl md:text-4xl lg:text-5xl p-5 font-semibold text-[#313131] dark:text-white">
         Il nous ont fait{" "}
         <span className="text-blue-500 dark:text-white">confiance !</span>{" "}
         <br /> A votre tour !
-      </h3>
+      </h2>
 
       <div className="max-w-4xl mx-auto">
         <Slider {...settings}>
@@ -50,17 +50,17 @@ const ClientFeedbackForm = () => {
                 <p className="mt-2 text-gray-400 text-[919191]">
                   {feedback.comment}
                 </p>
-                <div className="flex gap-1 mt-2 items-center">
+                <figure className="flex gap-1 mt-2 items-center">
                   {stars.map((star, index) => (
                     <React.Fragment key={index}>{star}</React.Fragment>
                   ))}
-                  <span className="text-black dark:bg-white dark:text-blue-500 rounded-lg w-10 h-5 text-center font-semibold text-sm ml-2">
+                  <figcaption className="text-black dark:bg-white dark:text-blue-500 rounded-lg w-10 h-5 text-center font-semibold text-sm ml-2">
                     5.0
-                  </span>
-                </div>
+                  </figcaption>
+                </figure>
                 <div className="flex justify-between mt-8 text-[919191] text-blue-500  dark:text-white">
                   <p>{feedback.author}</p>
-                  <p>{feedback.date}</p>
+                  <time>{feedback.date}</time>
                 </div>
               </div>
             </div>

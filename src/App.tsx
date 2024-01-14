@@ -6,11 +6,11 @@ import Footer from "./components/Footer";
 import "./index.css";
 import { useState } from "react";
 
-function App() {
-  const [lightMode, setlightMode] = useState(false);
+const App: React.FC = () => {
+  const [lightMode, setLightMode] = useState(false);
 
   const handleChangeTheme = () => {
-    setlightMode(!lightMode);
+    setLightMode(!lightMode);
   };
   return (
     <div className={`${lightMode ? "" : "dark"}`}>
@@ -23,6 +23,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;

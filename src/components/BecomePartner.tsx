@@ -1,4 +1,6 @@
-const BecomePartner = () => {
+import React from "react";
+
+const BecomePartner: React.FC = () => {
   return (
     <div className="mt-8 font-Montserrat border-2 rounded-lg border-blue-500 p-4 lg:p-6 m-5 text-start max-w-6xl lg:mx-auto">
       <h3 className="text-2xl md:text-4xl lg:text-5xl font-semibold text-[#313131] dark:text-white">
@@ -21,9 +23,9 @@ const BecomePartner = () => {
             className="w-4 h-4 ml-1 mt-1 hover:text-white"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
-              clip-rule="evenodd"
+              clipRule="evenodd"
             />
           </svg>
         </button>
